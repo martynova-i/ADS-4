@@ -41,8 +41,9 @@ void TPQueue<T>::push(const T& item) {
             }
             if (arr[i].prior < item.prior) {
                 arr[i + 1] = arr[i];
-                if (i == 0)
+                if (i == 0){
                     arr[i] = item;
+                }
                     continue;
             }
         }
